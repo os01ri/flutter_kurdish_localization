@@ -1,11 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter/widgets.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-class _KurdishMaterialLocalizationsDelegate
-    extends LocalizationsDelegate<WidgetsLocalizations> {
+class _KurdishMaterialLocalizationsDelegate extends LocalizationsDelegate<WidgetsLocalizations> {
   const _KurdishMaterialLocalizationsDelegate();
 
   @override
@@ -13,9 +12,7 @@ class _KurdishMaterialLocalizationsDelegate
 
   @override
   Future<WidgetsLocalizations> load(Locale locale) async {
-    return SynchronousFuture<WidgetsLocalizations>(
-      KurdishWidgetLocalizations(),
-    );
+    return SynchronousFuture<WidgetsLocalizations>(KurdishWidgetLocalizations());
   }
 
   @override
@@ -23,27 +20,47 @@ class _KurdishMaterialLocalizationsDelegate
 }
 
 class KurdishWidgetLocalizations extends WidgetsLocalizations {
-  static const LocalizationsDelegate<WidgetsLocalizations> delegate =
-      _KurdishMaterialLocalizationsDelegate();
+  static const LocalizationsDelegate<WidgetsLocalizations> delegate = _KurdishMaterialLocalizationsDelegate();
 
   @override
   TextDirection get textDirection => TextDirection.rtl;
 
   @override
-  String get reorderItemDown => throw UnimplementedError();
+  String get reorderItemDown => 'دانانی ماددە بۆ خوارەوە';
 
   @override
-  String get reorderItemLeft => throw UnimplementedError();
+  String get reorderItemLeft => 'دانانی ماددە بۆ چەپ';
 
   @override
-  String get reorderItemRight => throw UnimplementedError();
+  String get reorderItemRight => 'دانانی ماددە بۆ ڕاست';
 
   @override
-  String get reorderItemToEnd => throw UnimplementedError();
+  String get reorderItemToEnd => 'دانانی ماددە بۆ کۆتایی';
 
   @override
-  String get reorderItemToStart => throw UnimplementedError();
+  String get reorderItemToStart => 'دانانی ماددە بۆ سەرەتا';
 
   @override
-  String get reorderItemUp => throw UnimplementedError();
+  String get reorderItemUp => 'دانانی ماددە بۆ سەرەوە';
+
+  @override
+  String get copyButtonLabel => 'لەبەرگرتن';
+
+  @override
+  String get cutButtonLabel => 'بڕین';
+
+  @override
+  String get lookUpButtonLabel => 'گەڕان';
+
+  @override
+  String get pasteButtonLabel => 'لکاندن';
+
+  @override
+  String get searchWebButtonLabel => 'گەڕان لە وێبدا';
+
+  @override
+  String get selectAllButtonLabel => 'هەمووی دیاریبکە';
+
+  @override
+  String get shareButtonLabel => 'هاوبەشکردن';
 }
