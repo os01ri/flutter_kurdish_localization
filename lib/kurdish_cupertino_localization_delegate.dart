@@ -296,4 +296,21 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
 
   @override
   String get cancelButtonLabel => 'هەڵوەشاندنەوە';
+
+  @override
+  String get collapsedHint => 'کەمکردنەوە';
+
+  @override
+  String get expandedHint => 'پێشکەوتن';
+  @override
+  String get expansionTileCollapsedHint => 'کەمکردنەوە';
+
+  @override
+  String get expansionTileCollapsedTapHint => 'کەمکردنەوە';
+
+  @override
+  String get expansionTileExpandedHint => 'پێشکەوتن';
+
+  @override
+  String get expansionTileExpandedTapHint => 'پێشکەوتن';
 }
