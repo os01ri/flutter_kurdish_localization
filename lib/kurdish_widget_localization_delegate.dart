@@ -23,7 +23,7 @@ class KurdishWidgetLocalizations extends WidgetsLocalizations {
   static const LocalizationsDelegate<WidgetsLocalizations> delegate = _KurdishMaterialLocalizationsDelegate();
 
   @override
-  TextDirection get textDirection => TextDirection.rtl;
+  TextDirection get textDirection => .rtl;
 
   @override
   String get reorderItemDown => 'دانانی ماددە بۆ خوارەوە';
@@ -63,4 +63,7 @@ class KurdishWidgetLocalizations extends WidgetsLocalizations {
 
   @override
   String get shareButtonLabel => 'هاوبەشکردن';
+
+  @override
+  String get radioButtonUnselectedLabel => "دیاری نەکراو";
 }
